@@ -76,13 +76,13 @@ public class ConditionalStatementLevel1 {
         mark = scan.nextInt();
         if (mark < 25)
             grade = "F";
-        else if (mark == 25 ||  mark < 45)
+        else if (mark >=25 &&  mark < 45)
             grade = "E";
-        else if (mark == 45 || mark < 50)
+        else if (mark >=45 && mark < 50)
             grade = "D";
-        else if (mark == 50 || mark < 60)
+        else if (mark >= 50 && mark < 60)
             grade = "C";
-        else if (mark == 60 || mark < 80)
+        else if (mark >= 60 && mark < 80)
             grade = "B";
         else if (mark >= 80)
             grade = "A";
