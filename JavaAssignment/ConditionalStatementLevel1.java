@@ -20,13 +20,13 @@ public class ConditionalStatementLevel1 {
     }
     public  static  void squareCheck()
     {
-        int a,b;
+
         //Get two inputs from the user
         System.out.println("Enter the first value:");
         Scanner scan=new Scanner(System.in);
-        a=scan.nextInt();
+        int a = scan.nextInt();
         System.out.println("Enter the second value:");
-        b=scan.nextInt();
+        int b=scan.nextInt();
         //Check and print whether the given shape is square or not
         if(a==b)
             System.out.println("The given shape is square");
@@ -38,7 +38,7 @@ public class ConditionalStatementLevel1 {
         int costPerUnit=100;
         double discount=0;
         //Get the num of quantity from user
-        System.out.println("Enter the number of quantity:");
+        System.out.println("Enter the number of product :");
         Scanner scan=new Scanner(System.in);
         int quantity=scan.nextInt();
         //calculate purchased price
@@ -76,13 +76,13 @@ public class ConditionalStatementLevel1 {
         mark = scan.nextInt();
         if (mark < 25)
             grade = "F";
-        else if (mark == 25 && mark < 45)
+        else if (mark == 25 ||  mark < 45)
             grade = "E";
-        else if (mark == 45 && mark < 50)
+        else if (mark == 45 || mark < 50)
             grade = "D";
-        else if (mark == 50 && mark < 60)
+        else if (mark == 50 || mark < 60)
             grade = "C";
-        else if (mark == 60 && mark < 80)
+        else if (mark == 60 || mark < 80)
             grade = "B";
         else if (mark >= 80)
             grade = "A";
@@ -115,7 +115,7 @@ public class ConditionalStatementLevel1 {
         {
             youngst=age1;
         }
-        else if(age2>age3 && age2>age1)
+        else if(age2<age3 && age2<age1)
         {
             youngst=age2;
         }
@@ -208,17 +208,17 @@ public class ConditionalStatementLevel1 {
             System.out.println("Please enter a valid character.");
     }
     public static void main(String[] args) {
-        //squareCheck();
-        //findTheGreatestNum();
-        //discountForPurchasedItem();
-        //calculateBonus();
-        //gradingSystem();
-        //findOldestAndYoungest();
-        //findAbsoluteValue();
-        //checkThePercentage();
+        squareCheck();
+        findTheGreatestNum();
+        discountForPurchasedItem();
+        calculateBonus();
+        gradingSystem();
+        findOldestAndYoungest();
+        findAbsoluteValue();
+        checkThePercentage();
         medicalCheck();
-        //findValuesForExpressions();
-        //findUpperAndLowerCase();
+        findValuesForExpressions();
+        findUpperAndLowerCase();
 
 
     }
