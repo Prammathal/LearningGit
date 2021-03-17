@@ -10,15 +10,22 @@ public class UniqueCarNumber {
         int n = s.nextInt();
         Random r = new Random();
         int[] carnumber = new int[n];
-        boolean status;
+        boolean isAvailable = false;
 
         for (int i = 0; i < n; i++) {
+            isAvailable = false;
             int carNum = r.nextInt(9999);
             for (int j=0;j<n;j++) {
-                if (carnumber[j]== carNum) {
+                if (carnumber[j]== carNum)
+                {
+                    isAvailable = true;
                     break;
                 }
-                carnumber[i] = carNum;
+
+                if(!isAvailable)
+                {
+                    carnumber[i] = carNum;
+                }
 
 
             }
