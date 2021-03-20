@@ -21,6 +21,10 @@ public class UniqueCarNumber {
                     isAvailable = true;
                     break;
                 }
+                if(isAvailable)
+                {
+                    i--;
+                }
 
                 if(!isAvailable)
                 {
